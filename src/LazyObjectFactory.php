@@ -27,14 +27,6 @@ class LazyObjectFactory
     }
 
     /**
-     * @param class-string<TClass>|TClass $className
-     */
-    public static function create(string|object $className): static
-    {
-        return new static($className);
-    }
-
-    /**
      * Create a lazy-initialization object.
      *
      * @param mixed ...$arguments
@@ -73,6 +65,18 @@ class LazyObjectFactory
     {
         return $this->reflectionClass->newLazyGhost(
             initializer: $initializer,
+        );
+    }
+
+    /**
+     * Create a factory instance by class name.
+     *
+     * @param class-string<TClass>|TClass $className
+     */
+    public static function create(string|object $className): static
+    {
+        return new static(
+            className: $className,
         );
     }
 }

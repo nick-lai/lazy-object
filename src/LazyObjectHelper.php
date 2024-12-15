@@ -53,6 +53,12 @@ class LazyObjectHelper
      */
     public static function createLazyObjectByInitializer(string|object $className, callable $initializer)
     {
-        return LazyObjectFactory::create($className)->createLazyObjectByInitializer($initializer);
+        $factory = LazyObjectFactory::create(
+            className: $className,
+        );
+
+        return $factory->createLazyObjectByInitializer(
+            initializer: $initializer,
+        );
     }
 }
