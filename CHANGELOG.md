@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.1](https://github.com/nick-lai/lazy-object/compare/v1.0.0...v1.0.1) (2024-12-15)
+
+
+### Bug Fixes
+
+* resolve static instance type error ([e1d58c4](https://github.com/nick-lai/lazy-object/commit/e1d58c473831c9c3a0016fab359cae0ef173fefb))
+
+
+### Miscellaneous Chores
+
+* add CHANGELOG.md to export-ignore in .gitattributes ([a839d44](https://github.com/nick-lai/lazy-object/commit/a839d44db20bdaf1057fe705bf68434a82afc3f4))
+
 ## 1.0.0 (2024-12-15)
 
 
