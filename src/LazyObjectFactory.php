@@ -28,8 +28,6 @@ class LazyObjectFactory
 
     /**
      * @param class-string<TClass>|TClass $className
-     *
-     * @return static
      */
     public static function create(string|object $className): static
     {
