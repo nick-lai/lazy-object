@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/nick-lai/lazy-object/compare/v1.0.1...v1.0.2) (2024-12-15)
+
+
+### Bug Fixes
+
+* update content-hash in composer.lock ([3a89126](https://github.com/nick-lai/lazy-object/commit/3a891269fd6f11f607a36c427a53bff904755825))
+
 ## [1.0.1](https://github.com/nick-lai/lazy-object/compare/v1.0.0...v1.0.1) (2024-12-15)
 
 
