@@ -1,0 +1,49 @@
+{
+    "name": "nick-lai/lazy-object",
+    "description": "A lightweight lazy object library for PHP.",
+    "keywords": [
+        "lazy object",
+        "lazy"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/nick-lai/lazy-object",
+    "support": {
+        "issues": "https://github.com/nick-lai/lazy-object/issues",
+        "source": "https://github.com/nick-lai/lazy-object"
+    },
+    "authors": [
+        {
+            "name": "Nick Lai",
+            "email": "resxc13579@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.5",
+        "squizlabs/php_codesniffer": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "NickLai\\LazyObject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NickLai\\LazyObject\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs --standard=PSR12 --extensions=php --colors --parallel=16 -s src tests",
+        "cs-fix": "phpcbf --standard=PSR12 --extensions=php --colors --parallel=16 -s src tests",
+        "phpstan": "phpstan analyse --no-progress -c phpstan.neon",
+        "test": "phpunit",
+        "test-coverage-text": "phpunit --coverage-text"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "0.0.0"
+}

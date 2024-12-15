@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+    paths:
+        - src
+    ignoreErrors:
+        -
+            identifier: trait.unused
+            count: 1
+            path: src/LazyObjectTrait.php
