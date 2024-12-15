@@ -39,8 +39,6 @@ trait LazyObjectTrait
      */
     public static function createLazyObjectByInitializer(callable $initializer): static
     {
-        static $factory = LazyObjectFactory::create(static::class);
-
-        return $factory->createLazyObjectByInitializer($initializer);
+        return LazyObjectFactory::create(static::class)->createLazyObjectByInitializer($initializer);
     }
 }
