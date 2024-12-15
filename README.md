@@ -2,9 +2,9 @@
 [![Static Analysis](https://github.com/nick-lai/lazy-object/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/nick-lai/lazy-object/actions/workflows/static-analysis.yml)
 [![Tests](https://github.com/nick-lai/lazy-object/actions/workflows/tests.yml/badge.svg)](https://github.com/nick-lai/lazy-object/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/nick-lai/lazy-object/badge.svg?branch=main)](https://coveralls.io/github/nick-lai/lazy-object?branch=main)
-[![PHP Version Require](http://poser.pugx.org/nick-lai/lazy-object/require/php)](https://packagist.org/packages/nick-lai/lazy-object)
-[![Latest Stable Version](http://poser.pugx.org/nick-lai/lazy-object/v)](https://packagist.org/packages/nick-lai/lazy-object)
-[![Total Downloads](http://poser.pugx.org/nick-lai/lazy-object/downloads)](https://packagist.org/packages/nick-lai/lazy-object/stats)
+[![PHP Version Require](https://poser.pugx.org/nick-lai/lazy-object/require/php)](https://packagist.org/packages/nick-lai/lazy-object)
+[![Latest Stable Version](https://poser.pugx.org/nick-lai/lazy-object/v)](https://packagist.org/packages/nick-lai/lazy-object)
+[![Total Downloads](https://poser.pugx.org/nick-lai/lazy-object/downloads)](https://packagist.org/packages/nick-lai/lazy-object/stats)
 
 # LazyObject
 
