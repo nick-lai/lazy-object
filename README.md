@@ -1,3 +1,5 @@
+[![Lazy Object](.github/assets/banner.jpg)](https://github.com/nick-lai/lazy-object)
+
 [![PSR-12](https://github.com/nick-lai/lazy-object/actions/workflows/psr-12.yml/badge.svg)](https://github.com/nick-lai/lazy-object/actions/workflows/psr-12.yml)
 [![Static Analysis](https://github.com/nick-lai/lazy-object/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/nick-lai/lazy-object/actions/workflows/static-analysis.yml)
 [![Tests](https://github.com/nick-lai/lazy-object/actions/workflows/tests.yml/badge.svg)](https://github.com/nick-lai/lazy-object/actions/workflows/tests.yml)
