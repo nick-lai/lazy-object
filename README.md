@@ -70,6 +70,14 @@ $lazyObject = NormalClass::createLazyObjectByArgumentsGetter(fn () => [
 // Initialized.
 // Hi, Spike!
 echo "Hi, {$lazyObject->name}!" . PHP_EOL;
+
+$lazyObject = NormalClass::createLazyObjectByInitializer(fn ($object) => $object->__construct(
+    name: 'Tyke',
+));
+// Outputs:
+// Initialized.
+// Hi, Tyke!
+echo "Hi, {$lazyObject->name}!" . PHP_EOL;
 ```
 
 ### `LazyObjectFactory`
@@ -86,11 +94,28 @@ class NormalClass
     }
 }
 
-$lazyObjectFactory = LazyObjectFactory::create(NormalClass::class);
-$lazyObject = $lazyObjectFactory->createLazyObject('Jerry');
+$factory = LazyObjectFactory::create(NormalClass::class);
+
+$lazyObject = $factory->createLazyObject('Jerry');
 // Outputs:
 // Initialized.
 // Hi, Jerry!
+echo "Hi, {$lazyObject->name}!" . PHP_EOL;
+
+$lazyObject = $factory->createLazyObjectByArgumentsGetter(fn () => [
+    'name' => 'Spike',
+]);
+// Outputs:
+// Initialized.
+// Hi, Spike!
+echo "Hi, {$lazyObject->name}!" . PHP_EOL;
+
+$lazyObject = $factory->createLazyObjectByInitializer(fn ($object) => $object->__construct(
+    name: 'Tyke',
+));
+// Outputs:
+// Initialized.
+// Hi, Tyke!
 echo "Hi, {$lazyObject->name}!" . PHP_EOL;
 ```
 
@@ -110,13 +135,33 @@ class NormalClass
 
 $lazyObject = LazyObjectHelper::createLazyObject(
     className: NormalClass::class,
-    arguments: [
-        'name' => 'Jerry',
-    ],
+    name: 'Jerry',
 );
 // Outputs:
 // Initialized.
 // Hi, Jerry!
+echo "Hi, {$lazyObject->name}!" . PHP_EOL;
+
+$lazyObject = LazyObjectHelper::createLazyObjectByArgumentsGetter(
+    className: NormalClass::class,
+    argumentsGetter: fn () => [
+        'name' => 'Spike',
+    ],
+);
+// Outputs:
+// Initialized.
+// Hi, Spike!
+echo "Hi, {$lazyObject->name}!" . PHP_EOL;
+
+$lazyObject = LazyObjectHelper::createLazyObjectByInitializer(
+    className: NormalClass::class,
+    initializer: fn ($object) => $object->__construct(
+        name: 'Tyke',
+    ),
+);
+// Outputs:
+// Initialized.
+// Hi, Tyke!
 echo "Hi, {$lazyObject->name}!" . PHP_EOL;
 ```
 
