@@ -10,7 +10,7 @@
 
 # LazyObject
 
-**A lightweight [lazy object](https://www.php.net/manual/en/language.oop5.lazy-objects.php) library for PHP.**
+A lightweight [lazy object](https://www.php.net/manual/en/language.oop5.lazy-objects.php) library for PHP 8.4+ project.
 
 ## Table of Contents
 

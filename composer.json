@@ -1,6 +1,6 @@
 {
     "name": "nick-lai/lazy-object",
-    "description": "A lightweight lazy object library for PHP.",
+    "description": "A lightweight lazy object library for PHP 8.4+ project.",
     "keywords": [
         "lazy object",
         "lazy"
