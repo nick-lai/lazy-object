@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/nick-lai/lazy-object/compare/v1.0.2...v1.0.3) (2024-12-19)
+
+
+### Bug Fixes
+
+* add return type declarations for lazy object creation methods ([7a9f63f](https://github.com/nick-lai/lazy-object/commit/7a9f63f69e5903d0fb93fe4788790a801a232a88))
+
 ## [1.0.2](https://github.com/nick-lai/lazy-object/compare/v1.0.1...v1.0.2) (2024-12-15)
 
 
