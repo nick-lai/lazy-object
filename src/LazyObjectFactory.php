@@ -33,7 +33,7 @@ class LazyObjectFactory
      *
      * @return TClass
      */
-    public function createLazyObject(...$arguments)
+    public function createLazyObject(...$arguments): object
     {
         return $this->createLazyObjectByInitializer(
             initializer: static fn ($object) => $object->__construct(...$arguments),
@@ -47,7 +47,7 @@ class LazyObjectFactory
      *
      * @return TClass
      */
-    public function createLazyObjectByArgumentsGetter(callable $argumentsGetter)
+    public function createLazyObjectByArgumentsGetter(callable $argumentsGetter): object
     {
         return $this->createLazyObjectByInitializer(
             initializer: static fn ($object) => $object->__construct(...$argumentsGetter()),
@@ -61,7 +61,7 @@ class LazyObjectFactory
      *
      * @return TClass
      */
-    public function createLazyObjectByInitializer(callable $initializer)
+    public function createLazyObjectByInitializer(callable $initializer): object
     {
         return $this->reflectionClass->newLazyGhost(
             initializer: $initializer,
